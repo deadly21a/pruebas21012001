@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="splash" class="splash">
-    <div class="splash-orb">✦</div>
+    <div class="splash-orb">♉</div>
     <div class="sysline">SYSTEM ONLINE</div>
     <h1>TAURUS <b>SYSTEM</b></h1>
     <p>DISCIPLINA • REGISTRA • EVOLUCIONA</p>
@@ -19,7 +19,7 @@
 
   <aside id="drawer" class="drawer">
     <div class="drawer-head">
-      <div class="avatar-mark">◆</div>
+      <div class="avatar-mark">♉</div>
       <div><strong id="drawerName">CAZADOR</strong><small>TAURUS SYSTEM</small></div>
     </div>
     <div id="drawerNav" class="drawer-nav"></div>
@@ -31,7 +31,7 @@
     <header class="topbar">
       <button id="menuBtn" class="icon-btn" aria-label="Menú">☰</button>
       <div class="brand-mini">
-        <div class="mini-mark">✦</div>
+        <div class="mini-mark">♉</div>
         <div><strong>TAURUS <b>SYSTEM</b></strong><small id="topSubtitle">Inicio</small></div>
       </div>
       <div id="rankBadge" class="rank-badge">LV. 1</div>
@@ -41,6 +41,9 @@
     <nav id="bottomNav" class="bottom-nav"></nav>
   </div>
 
+  <script>
+    window.__taurusSplashFallback=setTimeout(function(){var s=document.getElementById('splash');if(s)s.classList.add('hide');},2600);
+  </script>
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
