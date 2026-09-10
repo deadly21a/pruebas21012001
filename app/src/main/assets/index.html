@@ -1,50 +1,37 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-  <meta name="theme-color" content="#05050a">
-  <title>Taurus System</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#06070b">
+<title>Taurus System</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="splash" class="splash">
-    <div class="splash-orb">♉</div>
-    <div class="sysline">SYSTEM ONLINE</div>
-    <h1>TAURUS <b>SYSTEM</b></h1>
-    <p>DISCIPLINA • REGISTRA • EVOLUCIONA</p>
-    <div class="loader"><em></em></div>
-    <small>Inicializando tu sistema…</small>
-  </div>
-
-  <aside id="drawer" class="drawer">
-    <div class="drawer-head">
-      <div class="avatar-mark">♉</div>
-      <div><strong id="drawerName">CAZADOR</strong><small>TAURUS SYSTEM</small></div>
-    </div>
-    <div id="drawerNav" class="drawer-nav"></div>
-    <div class="drawer-quote">DISCIPLINA HOY.<br>RESULTADOS MAÑANA.</div>
-  </aside>
-  <div id="scrim" class="scrim"></div>
-
-  <div class="shell">
-    <header class="topbar">
-      <button id="menuBtn" class="icon-btn" aria-label="Menú">☰</button>
-      <div class="brand-mini">
-        <div class="mini-mark">♉</div>
-        <div><strong>TAURUS <b>SYSTEM</b></strong><small id="topSubtitle">Inicio</small></div>
-      </div>
-      <div id="rankBadge" class="rank-badge">LV. 1</div>
-    </header>
-
-    <main id="app" class="app"></main>
-    <nav id="bottomNav" class="bottom-nav"></nav>
-  </div>
-
-  <script>
-    window.__taurusSplashFallback=setTimeout(function(){var s=document.getElementById('splash');if(s)s.classList.add('hide');},2600);
-  </script>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+<div id="splash" class="splash">
+  <div class="splash-art"><div class="eyes"></div><div class="horn-mark">♉</div></div>
+  <h1>TAURUS <b>SYSTEM</b></h1>
+  <p>DISCIPLINA TE HACE MÁS FUERTE</p>
+  <div class="loader"><span></span></div>
+  <button id="skipSplash" class="skip">INICIAR SISTEMA</button>
+</div>
+<div id="scrim" class="scrim"></div>
+<aside id="drawer" class="drawer">
+  <div class="drawer-brand"><div class="bull">♉</div><div><b>TAURUS <em>SYSTEM</em></b><small>DISCIPLINA TE HACE MÁS FUERTE</small></div></div>
+  <nav id="drawerNav"></nav>
+  <div class="drawer-foot"><div class="bull-line">♉</div><span>DISCIPLINA HOY<br>RESULTADOS MAÑANA</span></div>
+</aside>
+<div class="shell">
+<header class="topbar">
+  <button id="menuBtn" class="menu-btn">☰</button>
+  <div class="brand"><div class="brand-icon">♉</div><div><b>TAURUS <em>SYSTEM</em></b><small id="topSubtitle">Inicio</small></div></div>
+  <div id="rankBadge" class="rank">LV. 1</div>
+</header>
+<main id="app"></main>
+<nav id="bottomNav" class="bottom-nav"></nav>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>setTimeout(function(){var s=document.getElementById('splash');if(s)s.classList.add('hide')},1800)</script>
 </body>
 </html>
